@@ -58,7 +58,7 @@ def slavePodTemplate = """
                     }
 
                     stage("Docker Push") {
-                        sh "docker push akaev494/artemis-build:${branch.replace('version/', 'v')}"
+                        sh "docker push akaev494/artemis:${branch.replace('version/', 'v')}"
                     }
                 }
         }
